@@ -17,67 +17,61 @@
 
 prompt = require("prompt-sync")();
 
+do{;
+
 console.log("-----------------------------------------------------------------");
 console.log("");
 console.log("OLÁ VOCÊ CHEGOU NA IRLANDA PARA O SEU PRIMEIRO INTERCAMBIO!!!!");
 console.log("PORÉM PRECISAMOS SABER SE VOCÊ ESTA PREPARADO PARA COMEÇAR A JORNADA!!!!");
 console.log("");
 console.log("-------------------------------------------------------------");
-resposta1 = prompt("VOCÊ ESTÁ PREPARADO PARA COMEÇAR SUA JORNADA?????       ");
 
-if (resposta1 == "SIM"){;
-    console.log("-------------------------------------------------------------");
-    resposta2 = prompt("VOCÊ JUNTOU DINHEIRO PARA RESERVA DE SEGURANÇA?????     ");
-    console.log("");
-    resposta3 = prompt("VOCÊ DEU ENTRADA PARA O VISTO????       ");
-    console.log("");
-    resposta4 = prompt("JÁ DEFINIU A ONDE IRÁ DORMIR NA PRIMEIRA SEMANA????        ");
-    console.log("");
-    resposta5 = prompt("CONTRATOU UM SEGURO DE VIAGEM????       ");
-    console.log("");
-    resposta6 = prompt("VOCÊ JÁ ENCONTROU ALGUM TRABALHO PARA COMEÇAR????       ");
+do {;
 
-}else{
-    do {
+    console.log("");
+    var resposta1 = prompt("VOCÊ ESTÁ PREPARADO PARA COMEÇAR SUA JORNADA?????       ");
+    console.log("");
+
+    if (resposta1.toUpperCase() != "SIM");
+    {;
         console.log("-------------------------------------------------------------");
-        console.log("VOCÊ NÃO TEM OPÇÃO, CLIQUE SIM PARA COMEÇAR")
-        console.log("")
-        resposta7 = prompt ("VOCÊ VAI COMEÇAR SUA JORNADA OU NÃO???     ");
+        console.log("VOCÊ NÃO PODE VOLTAR ATRAS, DIGITE SIM PARA COMEÇAR");
         console.log("-------------------------------------------------------------");
-    }while (resposta7 != "SIM");
+    };
+
+}while (resposta1.toUpperCase() != "SIM")
+
+console.log("-------------------------------------------------------------");
+var resposta2 = prompt("VOCÊ JUNTOU DINHEIRO PARA RESERVA DE SEGURANÇA?????     ");
+console.log("");
+var resposta3 = prompt("VOCÊ DEU ENTRADA PARA O VISTO????       ");
+console.log("");
+var resposta4 = prompt("JÁ DEFINIU A ONDE IRÁ DORMIR NA PRIMEIRA SEMANA????        ");
+console.log("");
+var resposta5 = prompt("CONTRATOU UM SEGURO DE VIAGEM????       ");
+console.log("");
+var resposta6 = prompt("VOCÊ JÁ ENCONTROU ALGUM TRABALHO PARA COMEÇAR????       ");
     
-    console.log("-------------------------------------------------------------");
-    resposta2 = prompt("VOCÊ JUNTOU DINHEIRO PARA RESERVA DE SEGURANÇA?????     ");
-    console.log("");
-    resposta3 = prompt("VOCÊ DEU ENTRADA PARA O VISTO????       ");
-    console.log("");
-    resposta4 = prompt("JÁ DEFINIU A ONDE IRÁ DORMIR NA PRIMEIRA SEMANA????        ");
-    console.log("");
-    resposta5 = prompt("CONTRATOU UM SEGURO DE VIAGEM????       ");
-    console.log("");
-    resposta6 = prompt("VOCÊ JÁ ENCONTROU ALGUM TRABALHO PARA COMEÇAR????       ");
-    console.log("-------------------------------------------------------------");
-    }
 
 let cont = 0;
 
-if (resposta2 == "SIM"){;
+if (resposta2.toUpperCase() == "SIM"){;
     cont = cont + 1;
 }
-if (resposta3 == "SIM"){;
+if (resposta3.toUpperCase() == "SIM"){;
     cont = cont + 1;
 }
-if (resposta4 == "SIM"){;
+if (resposta4.toUpperCase() == "SIM"){;
     cont = cont + 1;
 }
-if (resposta5 == "SIM"){;
+if (resposta5.toUpperCase() == "SIM"){;
     cont = cont + 1;
 }
-if (resposta6 == "SIM"){;
+if (resposta6.toUpperCase() == "SIM"){;
     cont = cont + 1;
 };
 
-console.log(cont)
+console.log(cont);
 console.log("");
 console.log("-------------------------------------------------------------");
 console.log("");
@@ -107,3 +101,7 @@ if (cont == 5){;
 console.log("");
 console.log("-------------------------------------------------------------");
 console.log("");
+
+var reiniciar = prompt("Deseja reiniciar o jogo??   ");
+
+}while(reiniciar.toUpperCase() == "SIM");
