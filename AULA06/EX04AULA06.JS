@@ -19,7 +19,7 @@ while(cont <x){
 
 console.log("The oldest array is:   ",vectorrandom)
 vectorrandom.sort((a,b) => a-b)
-console.log("The new array: ",vectorrandom)
+console.log("The newest array is: ",vectorrandom)
 
 cont = 0
 while (cont < x)

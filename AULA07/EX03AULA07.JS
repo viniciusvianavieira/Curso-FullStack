@@ -17,4 +17,4 @@ while(cont < 20){
 
 console.log("The array is: ",vector)
 console.log("the array length is: ",vector.length)
-console.log("The new array is:  ",newvector.sort((a,b)=> a - b))
+console.log("The newest array is:  ",newvector.sort((a,b)=> a - b))
