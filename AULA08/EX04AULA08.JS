@@ -9,12 +9,13 @@
 var prompt = require("prompt-sync")();
 
 const cars = ["Onix", "Kwid", "Clio", "HB20", "Vectra"]
-const kilometers = [9.9, 10.3, 10.9, 11.0, 11.6 ]
+const kilometers = ["9.9", "10.3", "10.9", "11.0", "11.6" ]
 
 for (var i = 0; i < 5; i++){
 
-    console.log("The ",cars[i]," travels ",kilometers[i],"kilometers per liter")
+    console.log("The ",cars[i]," travels ",parseFloat(kilometers[i]),"kilometers per liter")
 
     
 }
-console.log(typeof(kilometers[i]))
+console.log(typeof(parseFloat(kilometers[1])))
+
