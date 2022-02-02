@@ -16,7 +16,7 @@
 // }
 //-----------------------------------------------------------------------------------
 console.clear()
-console.log()
+console.log
 
 var prompt = require("prompt-sync")()
 const vectorline = []
