@@ -18,12 +18,14 @@ console.log("2 - Fuck everyone let's make it in our way ")
 console.log("3 - You have an emergency fund, and it's a emergency isn't???")
 console.log()
 
+
+
 function Brazil(){
 
     console.log("Ok tickets to São Paulo is very cheap, lets buy!!")
     console.log("Be carefully the São Paulo is dangerous!!")
-    var random = Math.floor(Math.random()*11) 
-    if (random == 7){
+    var random = Math.floor(Math.random()*3) 
+    if (random == 2){
         console.log("OMG. You need call the police")
         console.log("you just got robbed")
         console.log("Pay attention!!!!!!!")
@@ -52,9 +54,11 @@ function Brazil(){
         }while(!(choicebrazil11 == "YES" || choicebrazil11 == "NO"))
 
         if (choicebrazil11 == "YES"){
+            console.log()
             console.log("------------------------------------------------")
             console.log("Welcome again in the rats run...")
             console.log("------------------------------------------------")
+            console.log()
 
         }else if (choicebrazil11 == "NO"){
             console.log("Well.. It wasn't the best of choices....")
@@ -66,14 +70,18 @@ function Brazil(){
             }while(!(choicebrazil111 == 2 || choicebrazil111 == 1))
 
             if (choicebrazil111 == 1){
+                console.log()
                 console.log("----------------------------------------------------------------------")
                 console.log("You are catched and arrested. Well... It's the end of your life...")
                 console.log("----------------------------------------------------------------------")
+                console.log()
             }else if (choicebrazil111 == 2){
+                console.log()
                 console.log("----------------------------------------------------------------------")
                 console.log("Sad to say that.... but hornor don't'pay the bills...")
                 console.log("You died")
                 console.log("----------------------------------------------------------------------")
+                console.log()
             }
             
         }
@@ -84,31 +92,64 @@ function Brazil(){
         console.log("Maybe it's the best choice!!!")
         console.log()
 
+        do{
+        var choicebrazil12 = prompt("Well... after 6 months do you wanna back to the home?? (YES OR NO):    ").toUpperCase()
+        }while(!(choicebrazil12 == "YES" || choicebrazil12 == "NO"))
 
+        if(choicebrazil12 == "NO"){
+            
+            console.log()
+            console.log("Good choice!!! You met a pretty girl and you want her")
+            console.log("But she want's'a person with a lot of money....")
+            console.log("And you are a poor guy. So")
+            console.log("Would you rather tell her that you are poor or lie?")
+            console.log()
+            var choicebrazil122 = prompt("(1) - Tell her the truth or (2) - Tell her the lie... ")
 
+            if (choicebrazil122 == 1){
+                console.log()
+                console.log("------------------------------------------------")
+                console.log("Well. She hates poor guys. Its so sad...")
+                console.log("Game over. You are so alone. Lets go home")
+                console.log("------------------------------------------------")
+            }else if(choicebrazil122 == 2){
 
+                console.log("")
+                console.log("Nice job. She belives in you")
+                var choicebrazil1222 = prompt("After 6 months. She wants to marry with you.You accept?").toUpperCase()
+                if ( choicebrazil1222 == "SIM"){
+                    console.log()
+                    console.log("------------------------------------------------")
+                    console.log("Congratulations!! You are happy and successful")
+                    console.log("------------------------------------------------")
+                }else if( choicebrazil1222 == "NAO"){
+                    console.log()
+                    console.log("------------------------------------------------")
+                    console.log ("Well she broak up with you...")
+                    console.log("Its very predictable...")
+                    console.log("Let go to home!!!!")      
+                    console.log("------------------------------------------------")
+                }
+            }
+        }else if(choicebrazil12 == "YES"){
+            console.log()
+            console.log("------------------------------------------------")
+            console.log("Welcome again in the rats run...")
+            console.log("------------------------------------------------")
 
+        }
     }
 }
-
 function travelling(){
 
-    console.log("In this option you decided take your fund and travelling around the world")
-    console.log("But you need choose your destiny first!!You have 3 options:    ")
+    console.log("In this option you decided take your fund and travelling around the Brazil")
+    console.log("Its a safe option")
+    console.log("Coward!!! But ok, lets go!")
     console.log()
-    console.log("1 - Travelling in Brazil")
-    console.log("2 - Travelling to Argentina")
-    console.log("3 - Travelling to England")
-    
-    destiny1 = +prompt("Choose the better option. But remember no regrets... :  ")
-    
-    if (destiny1 == 1){
 
-        console.log()
-        console.log("Coward!!! But ok, lets go!")
+    Brazil()
 
-        Brazil()
-    }
+    
 
 }
 function ratsrun(){
