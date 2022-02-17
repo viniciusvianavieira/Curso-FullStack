@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto+Serif:wght@100 & display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif,
+}
+
+html{
+  scroll-behavior: smooth;  
+}
+
+main{
+    margin:0 10rem 0 10rem
+}
+
+
+header{
+    margin:0 0rem 0 0rem
+}
+
+ul#Menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+   
+}
+
+ul#Menu li{
+    padding: 0.7rem;
+}
+
+nav{
+    background-color: rgb(54, 54, 247);
+    position:fixed;
+    width: 100%;
+}
+
+ul#Menu li i{
+    font-size: 2rem;
+    color: white;
+}
+
+ul#Menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul#Menu li:hover{
+    transform: scale(1.2);
+}
+
+header img{
+
+    width:100%;
+}
+
+header h1{
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+
+}
+
+section#cursos h2{
+    text-align: center;
+    padding: 3rem ;
+    font-size: 2rem;
+}
+
+header p{
+    margin:0 10rem 0 10rem;
+    padding: 2 rem;
+    font-size: 1.5 rem;
+
+}
+
+section#Cards{
+    display: flex;
+    width: 100%;
+    
+}
+
+.Card{
+    width: 20rem ;
+    margin: 0 2rem 0 1rem ;
+    box-shadow: 5px 3px 2px 3px #00000035;
+    transition: transform .5;
+}
+
+.Card img{
+    width: 100%;
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+section#cursos{
+    margin-bottom: 10rem ;   
+}
+
+.Card h3{
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.Card p{
+    font-size: 1.2rem;
+}
+
+.Card:hover{
+    transform: scale(1.1);
+}
+
+section#figura{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+
+
+}
+
+section #figura figure figcaption{
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section #figura p {
+    padding: 2rem;
+    justify-content: space-evenly;
+    align-items:center ;
+    
+    
+}
+
+section figure img{
+    width: 30rem;
+    height: 30rem;
+    
+}
+
+section#inscrevase{
+    padding: 3rem; /* Da uma distancia da imagem acima */
+    display: flex; /* Deixa um do lado do outro */
+    justify-content: flex-end;/* Joga os itens para esquerda*/
+}
+section#inscrevase form{
+    
+    flex-wrap: wrap;  /*  Quebra LInha */
+    width: 50%; /* Faz o form ocupar metade da pagina*/
+}
+
+section#inscrevase form input{
+    padding: 00.5rem; /*Aumenta o tamanho da caixinha*/
+    margin: 0.3rem 1rem 1rem 1rem; /* Da distancia de um para o outro email, nome para as caixas deixa coladin*/
+    font-size: 1.3; /*Muda o tamanho da fonte*/
+    width: 100%; /* Ocupa 100% da tela */
+
+}
+
+
+section#inscrevase form label{
+    margin:0  1rem 0 1rem; /* Mexe na palavra email para baixo e para o lado */
+    font-size: 1.3rem; /*Tamanho da fonte*/
+}
+
+
+
+footer{
+    background-color: blue;
+    padding: 4rem;
+    text-align: center;
+    color: wheat;
+}
+
