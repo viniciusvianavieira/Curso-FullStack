@@ -11,51 +11,101 @@ Esse é um jogo muito simples. Nós iremos utilizar HTML, CSS e JavaScript para 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <br>
-        <br>
-        <h1 class="Title1"> PROGRAMA DE ADIVINHAÇÃO DO NÚMERO </h1>
-    </header>
+    <nav>
+        <ul id="cabecalho">
+            <li id="icone"><i class="bi bi-controller"></i></li>
+            <li id="traco"> | </li>
+            <li> <a href="#inicio" > Inicio</a> </li>
+            <li> <a href="#regras" > Regras </a> </li>
+            <li> <a href="#jogo" > O jogo</a> </li>
+        </ul>
 
+    </nav>
+
+    <header>
+        
+    </header>
+    <h1 id="inicio"> JOGO DA ADIVINHAÇÃO </h1>
 <main>
 
     <section>
-        <br>
-        <br>
-        <h3 class="Title2"> ESSE É O PROGRAMA DE ADIVINHAÇÃO ESCOLHA UM NÚMERO E VEJA SE BATE COM O DO COMPUTADOR</h3>
+        
+    </section>
+        <h2 class="title2">Regras</h2>
+
+        <h4 id="regras"> O jogo funciona da seguinte maneira. O usuario irá escolher um número de 0 até 10. Enquanto isso o computador irá gerar um número aleatório de 0 até 10. O objetivo do jogo é que o usuario acerte o número gerado aleatóriamente pelo computador </h4>
 
 
     </section>
     
 
-    <section class="CorpoImagens">
-    <br>
-    <br>
-    <br>
-    <button id="button" value="first"> Click Here </button>
-        
-            <div class="Roleta">
-                <div id="imagens">
+    <section class="imagens">
+        <div id="imagem">
+            <h2> Padrão  </h2>
+            <img src="../PROJETO01/Imagens/Interrogacao.png" alt="Interrogação">
+            <p class="texto"> Essa é a tela padrão que aparece durante o jogo.</p>
+        </div>
+        <div id="imagem">
+            <h2> Acertou  </h2>
+            <img src="../PROJETO01/Imagens/Acerto.png" alt="Acerto">
+            <p class="texto"> Caso você acerte o número que o computador gerou aleatoriamente, a seguinte imagem ira aparecer para você</p>
+        </div>
+        <div id="imagem">
+            <h2> Errou  </h2>
+            <img src="../PROJETO01/Imagens/Erro.png" alt="Erro">
+            <p class="texto">Caso você erre o número que o computador gerou aleatoriamente, a seguinte imagem ira aparecer para você.</p>
+        </div>
 
-                    <img id="First" src="/Curso-JS/MODULO02/PROJETO01/Imagens/Interrogação.png">
 
-                    <img id="Second" src="/Curso-JS/MODULO02/PROJETO01/Imagens/Erro.png">
 
-                    <img id="Third" src="/Curso-JS/MODULO02/PROJETO01/Imagens/Acerto.png">
-
-                </div>
-            </div>
-       
     </section>
 
 
+    <h2 id="jogo"> O jogo </h2>
+    <section id="parte1">
+        <section id="botaos">
+
+            <h2 id="titulo3"> JOGUE AGORA </h2>
+
+            <div id="botao">
+
+                <h2 id="textobutton"> Clique no botão para gerar o número do usuario </h2>
+                <section id="botao1">
+                    <button id="button" onclick="chamar1()" value=""> Click Here </button>
+                    <h1 id="digito1"> </h1>
+                </section>
+
+                <h2 id="textobutton"> Clique no botão para gerar o número do computador</h2>
+                <section id="botao2">
+                    <button id="button" onclick="chamar2()" value=""> Click Here </button>
+                    <h1 id="digito2"> </h1>
+                </section>
+
+
+                <h2 id="textobutton"> Clique no botão para conferir o resultado</h2>
+                <section id="botao3">
+                    <button id="buttoncheck" onclick="imagem()" > CHECK </button>
+                </section>
+
+            </div>
+
+
+        </section>
+        <div id="imagemfim">
+            <img  src="../PROJETO01/Imagens/Interrogacao.png" id="imagemfinal" alt="Interrogação">
+        </div>
+        
+    </section>
+    
+
 
 </main>
-<footer>
+<footer class="fim">
     <p>
         <a href="htpp://www.viniciusvianavieira.com.br" target = "_blank"> www.viniciusvianavieira.com.br </a> 
         - Todos os direitos reservados 

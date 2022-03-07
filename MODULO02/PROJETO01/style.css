@@ -5,25 +5,240 @@
     padding: 0;
     margin: 0;
 }
+nav{
+    position: fixed;
+    width: 100%;
+}
+main{
+    margin: 0 3rem 0 7rem;
 
+}
+
+
+ul#cabecalho{
+    display: flex;
+    list-style: none; /* Deixa os itens sem a marcação*/
+    background-color: #57180F;
+    height: 3rem; /* Aumenta o background do cabeçalho*/
+    align-items: center;
+    
+}
+
+ul#cabecalho li a{
+    padding: 0rem 0.7rem 0rem 0.4rem;
+    color: #d1a100;
+    text-decoration: none; /* Tira o traco do link*/
+    position: relative;
+    margin-top: 2;
+}
+
+li#icone{
+    color: #d1a100;
+    font-size: 2REM; /*aumenta a fonte*/
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    align-items: center
+}
+
+li#traco{
+    color: #d1a100;
+    font-size: 2.2REM;
+    align-items: center;
+    padding: 0rem 0rem 0rem 0.5rem;
+}
 header{
     width: 100%;
-    background-color: #57180F;
-    height: 130px;
-
-
 }
-.Title1{
-    text-align:center;
+
+#inicio{
+    margin: 0rem 0rem 3rem 4rem;
+    padding-top: 4rem;
     color: #E0aF10;
     
+}
+
+.title2{
+    margin: 1rem 0rem 1rem 0rem;
+    color: #57180F;
+    font-size: 2rem;
+}
+
+.imagens{
+    display: flex;
+    color: black;
+    margin-top: 3rem;
+    width: 100%;
     
 }
 
-.Title2{
-    text-align: left;
+.imagens h2{
     color: #57180F;
+    width: 100%;
 }
+
+section div#imagem p{
+    margin: 0 0rem 0 0;
+    
+}
+
+ #imagem{
+    
+    margin: 0 2rem 0 1rem ;
+    box-shadow: 5px 3px 2px 3px #00000035;
+    text-align: center;
+    width: 100%;
+} 
+
+img{
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    width: 100%;
+}
+
+.texto{
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#jogo{
+    margin: 3rem 0rem 0rem 0rem ;
+    color: #57180F;
+    font-size: 2rem;
+}
+
+#titulo3{
+    color: #d1a100;
+    margin: 3rem 0rem 0rem 2rem ;
+}
+
+#botaos{
+    margin-top: 3rem;
+    padding-left: 0rem;
+    border: 1px solid #57180F;
+    border-radius: 1rem;
+    width: 58%;
+    margin: 3rem 0rem 3rem 0rem;
+}
+
+#botao{
+    margin: 3rem 3rem 3rem 3rem;
+    
+}
+
+
+#digito1{
+    height: 5rem;
+    width: 5rem;
+    font-size: 4.3rem;
+    margin-left: 9rem;
+    align-items: center;
+    text-align: center;
+    border-radius: 5rem;
+    color: #57180F;
+    border: #57180F 1px solid;
+
+}
+
+
+#digito2{
+    height: 5rem;
+    width: 5rem;
+    font-size: 4.3rem;
+    margin-left: 9rem;
+    align-items: center;
+    text-align: center;
+    border-radius: 5rem;
+    color: #57180F;
+    border: #57180F 1px solid;
+
+}
+
+
+
+#botao1{
+    display: flex;
+    margin: 0 0 2rem 0;
+}
+
+#botao2{
+    display: flex;
+    margin: 0 0 2rem 0;
+}
+#textobutton{
+
+    margin-bottom: 2rem;
+    color: #57180F;
+    width: 100%;
+}
+
+#button{
+    border: none;
+    padding: 25px 50px 25px 50px;
+    background-color: #57180F;
+    color: aliceblue;
+    outline: coral;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 0 0 0;
+
+    
+}
+#button:hover{
+    background-color: #808080;
+    
+}
+#button:active{
+    background-color: #D0CECE;
+
+}
+
+#parte1{
+    display: flex;
+    
+
+}
+
+#imagemfim{
+    height: 656px;
+    width: 42%;
+    border: 1px solid #57180F;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+
+}
+#parte1 img{
+    margin: 80px 0rem 0rem 0rem;
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+    
+
+}
+.fim{
+
+    margin-top: 2rem;
+    background-color: #57180F;
+    height: 2rem;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    color: #E0aF10;
+    
+}
+
+
+
+.fim a{
+    text-decoration: none;
+    font-style: none;
+    color: #E0aF10;
+}
+
+
 #button{
     border: none;
     padding: 25px 50px 25px 50px;
@@ -43,42 +258,29 @@ header{
 
 }
 
-.CorpoImagens{
-    display: flex;
-    align-items: center;
-    justify-content:  center;
-    margin: 0;
-    min-height: 100vh;
-
+#buttoncheck{
+    border: none;
+    padding: 2.1rem 4.2rem 2.1rem 4.2rem ;
+    background-color: #57180F;
+    color: aliceblue;
+    outline: coral;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#buttoncheck:hover{
+    background-color: #808080;
+    
+}
+#buttoncheck:active{
+    background-color: #D0CECE;
 
 }
 
-
-.Roleta{
-    overflow: hidden;
-    height:  300px;
-    width: 300px;
-}
-
-.Imagens{
-    display: flex;
-    transition: tramsform 0.5s ease-in-out;
-    transform: translateX(0);
-}
-
-img{
-    object-fit: cover;
-    height: 300px;
-    width: 300px;
-}
-
-body{
-    background-color: #DD6654;
-
-}
 
 footer{
 background-color: white;
 height: 100px;
 
 }
+

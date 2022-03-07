@@ -33,7 +33,7 @@
             <h2>Cursos</h2>
         <section id="Cards">
 
-                <div class="Card">
+                <div class="Card" data-animacao="up">
                     <img src="../Imagens/html.png" alt="LOGO HTML5">
                     <h3> HTML5S</h3>    
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -43,7 +43,7 @@
 
                 </div>
 
-                <div class="Card">
+                <div class="Card" data-animacao="up">
                     <img src="../Imagens/css.png" alt="LOGO CSS">
                     <h3> CSS </h3>    
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -53,7 +53,7 @@
 
                 </div>
 
-                <div class="Card">
+                <div class="Card" data-animacao="up">
                     <img src="../Imagens/javascript.png" alt="LOGO JAVASCRIPT">
                     <h3> JavaScript </h3>    
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -63,7 +63,7 @@
 
                 </div>
 
-                <div class="Card"> 
+                <div class="Card" data-animacao="up"> 
                     <img src="../Imagens/python.jfif" alt="LOGO PYTHON E SQL">
                     <h3> Python + SQL </h3>    
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -88,13 +88,13 @@
         <section id="inscrevase">
             
             <form>
-                <label for="nome"> Nome </label>
+                <label for="nome" id="labelnome">Nome </label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
 
-                <label for="email">E-mail </label>
+                <label for="email" id="labelemail">E-mail </label>
                 <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
 
-                <button type="submit">Enviar</button>
+                <button type="submit" >Enviar</button>
                 
             </form>
 
@@ -111,5 +111,6 @@
     </footer>
 
 
+<script src="../JS/script.js"></script>
 </body>
 </html>
