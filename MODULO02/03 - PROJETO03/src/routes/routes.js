@@ -1,8 +1,8 @@
 import express from 'express'
+import { getIndex } from './controller/FilmesController.js'
 
-const routes = express.Router()
+export const routes = express.Router() //trazendo apenas as rotas ao inves do express inteiro
+
+routes.get("/", getIndex)
 
 
-routes.get("/" , ( req , res ) => {
-    res.render('index.ejs')
-})
